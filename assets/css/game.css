@@ -25,6 +25,14 @@
     width: 100%;
 }
 
+.correct {
+    background-color: aqua;
+}
+
+.incorrect {
+    background-color: blueviolet;
+}
+
 #hud {
     display: flex;
     justify-content: space-between;
