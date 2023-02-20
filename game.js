@@ -1,40 +1,62 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
-let persons = {
-    1:{
-        name: "bob",
-        age: 12,
-        gender: "male"
-    },
-    2:{
-        name: "ob",
-        age: 12,
-        gender: "male"
-    },
-    3:{
-        name: "bb",
-        age: 12,
-        gender: "male"
-    },
-    
-};
-
-console.log(Array.from(persons));
-
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
+let questions = [...
     {
-        question: "how does the chinese flag looks like?",
+        question: "What color does the chinese flag have?",
         choice1: "yellow and blue",
-        choice1: ""
-        //choice1:
-        //choice1:
-
+        choice1: "blue"
+        choice3: "red and yellow"
+        choice4: "green"
+        answer:  3
+    },
+    {
+        question: "What color does the chinese flag have?",
+        choice1: "yellow and blue",
+        choice1: "blue"
+        choice3: "red and yellow"
+        choice4: "green"
+        answer:  3
+    },
+    {
+        question: "What color does the chinese flag have?",
+        choice1: "yellow and blue",
+        choice1: "blue"
+        choice3: "red and yellow"
+        choice4: "green"
+        answer:  3
+    },
+    {
+        question: "What color does the chinese flag have?",
+        choice1: "yellow and blue",
+        choice1: "blue"
+        choice3: "red and yellow"
+        choice4: "green"
+        answer:  3
     }
 ]
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 3;
+
+startgame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log
+};
+
+getNewQuestion = () => {
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions/length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innertext = currentQuestion.question;
+};
+
+startgame();
