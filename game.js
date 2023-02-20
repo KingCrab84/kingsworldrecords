@@ -9,7 +9,7 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "What color does the chinese flag have?",
+        question: "What skateboard?",
         choice1: "yellow and blue",
         choice1: "blue",
         choice3: "red and yellow",
@@ -17,55 +17,55 @@ let questions = [
         answer:  3
     },
     {
-        question: "What color does the chinese flag have?",
+        question: "What car?",
         choice1: "yellow and blue",
         choice1: "blue",
         choice3: "red and yellow",
         choice4: "green",
-        answer:  3
+        answer:  4
     },
     {
-        question: "What color does the chinese flag have?",
+        question: "What boat?",
         choice1: "yellow and blue",
         choice1: "blue",
         choice3: "red and yellow",
         choice4: "green",
-        answer:  3
+        answer:  2
     },
     {
-        question: "What color does the chinese flag have?",
+        question: "What airplane?",
         choice1: "yellow and blue",
         choice1: "blue",
         choice3: "red and yellow",
         choice4: "green",
-        answer:  3
+        answer:  1
     }
 ]
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
-startgame = () => {
+startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log
-};
+    console.log;
+}; 
 
 getNewQuestion = () => {
-    if (availableQuestions.length 0 questionCounter MAX_QUESTIONS) { //tags???
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) { //tags???
         return window.location.assign("/end.html");
     }
     
     questionCounter++;
-    const questionIndex = Math.floor(Math.random() * availableQuestions/length);
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innertext = currentQuestion.question;
 
-    choices.forEach( choice => {
+    choices.forEach(choice => {
         const number = choice.dataset["number"];
         choice.innertext = currentQuestion["choice" + number];
-    })
+    });
 
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
@@ -78,10 +78,12 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
-        getNewQuestion()
+
+
+        console.log(selectedAnswer == currentQuestion.answer);
+        getNewQuestion();
     });
 });
 
 
-startgame();
+startGame();
