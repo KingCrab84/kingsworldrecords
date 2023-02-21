@@ -26,11 +26,11 @@
 }
 
 .correct {
-    background-color: aqua;
+    background-color: rgb(93, 10, 248);
 }
 
 .incorrect {
-    background-color: blueviolet;
+    background-color: rgb(250, 0, 0);
 }
 
 #hud {
