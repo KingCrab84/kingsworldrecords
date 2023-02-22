@@ -5,7 +5,7 @@ const scoreText = document.getElementById('score');
 
 
 let currentQuestion = {};
-let acceptingAnswers = false;
+let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -46,13 +46,13 @@ let questions = [
 ]
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 4;
 
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log;
+    getNewQuestion();
 }; 
 
 getNewQuestion = () => {
@@ -61,20 +61,22 @@ getNewQuestion = () => {
     };
     
     questionCounter++;
-    questionCounterText.innerText = '${questionsCounter}/${MAX_QUESTIONS}';
+    questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innertext = currentQuestion.question;
+    console.log(currentQuestion);
+    question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innertext = currentQuestion["choice" + number];
+        choice.innerHTML = currentQuestion["choice" + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
+
 
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
@@ -102,7 +104,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score +=num;
-    scoreText.innerText = score;
+    scoreText.innerHTML = score;
 }
 
 startGame();
