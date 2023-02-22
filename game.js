@@ -12,36 +12,36 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "What skateboard?",
-        choice1: "yellow and blue",
+        question: "What skateboard blue?",
+        choice1: "orange",
         choice1: "blue",
-        choice3: "red and yellow",
-        choice4: "green",
-        answer:  3
-    },
-    {
-        question: "What car?",
-        choice1: "yellow and blue",
-        choice1: "blue",
-        choice3: "red and yellow",
-        choice4: "green",
-        answer:  4
-    },
-    {
-        question: "What boat?",
-        choice1: "yellow and blue",
-        choice1: "blue",
-        choice3: "red and yellow",
+        choice3: "yellow",
         choice4: "green",
         answer:  2
     },
     {
-        question: "What airplane?",
-        choice1: "yellow and blue",
+        question: "What car orange?",
+        choice1: "orange",
         choice1: "blue",
-        choice3: "red and yellow",
+        choice3: "yellow",
         choice4: "green",
         answer:  1
+    },
+    {
+        question: "What boat yellow?",
+        choice1: "orange",
+        choice1: "blue",
+        choice3: "yellow",
+        choice4: "green",
+        answer:  3
+    },
+    {
+        question: "What airplane green?",
+        choice1: "orange",
+        choice1: "blue",
+        choice3: "yellow",
+        choice4: "green",
+        answer:  4
     }
 ]
 
