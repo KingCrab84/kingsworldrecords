@@ -47,17 +47,16 @@
     text-align: center;
 }
 
-#progressbar {
+#progressBar {
     width: 20rem;
-    height: 3rem;
-    margin-top: 2rem;
-    border-radius: 5rem;
-    overflow: hidden;
+    height: 4rem;
+    border: 0.3rem solid #ed254eff;
+    margin-top: 1.5rem;
 }
 
-#progressbarfull {
-    height: 100%;
-    background: rgb(5, 187, 5);
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #ed254eff;
     width: 0%;
 }
 
