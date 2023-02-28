@@ -64,17 +64,17 @@ getNewQuestion = () => {
     };
     
     questionCounter++;
-    progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
 
     progressBarFull.style.width = '${(questionCounter / MAX_QUESTIONS) * 100}%';
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerHTML = currentQuestion.question;
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innerHTML = currentQuestion["choice" + number];
+        choice.innerText = currentQuestion["choice" + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -108,7 +108,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score +=num;
-    scoreText.innerHTML = score;
+    scoreText.innerText = score;
 }
 
 startGame();
