@@ -16,7 +16,7 @@ let questions = [
     {
         question: "What skateboard blue?",
         choice1: "orange",
-        choice1: "blue",
+        choice2: "blue",
         choice3: "yellow",
         choice4: "green",
         answer:  2
@@ -24,7 +24,7 @@ let questions = [
     {
         question: "What car orange?",
         choice1: "orange",
-        choice1: "blue",
+        choice2: "blue",
         choice3: "yellow",
         choice4: "green",
         answer:  1
@@ -32,20 +32,20 @@ let questions = [
     {
         question: "What boat yellow?",
         choice1: "orange",
-        choice1: "blue",
-        choice3: "yellow",
+        choice2: "blue",
+        choice3: "mellow",
         choice4: "green",
         answer:  3
     },
     {
         question: "What airplane green?",
         choice1: "orange",
-        choice1: "blue",
+        choice2: "blue",
         choice3: "yellow",
         choice4: "green",
         answer:  4
     }
-]
+];
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
@@ -60,13 +60,13 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign("/end.html");
+        return window.location.assign("end.html");
     };
     
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
 
-    progressBarFull.style.width = '${(questionCounter / MAX_QUESTIONS) * 100}%';
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`; 
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
