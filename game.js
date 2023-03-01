@@ -5,31 +5,25 @@ const progressText = document.getElementById("progressText")
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull')
 
-
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [];
-
-fetch(
-    "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
-) //video 10 och 11 Build a Quiz App
+fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple") //video 10 och 11 Build a Quiz App
     .then(res => {
         return res.json();
     })
     .then(loadedQuestions => {
-        console.log(loadedQuestions.results);
         questions = loadedQuestions.results.map( loadedQuestions => {
             const formattedQuestion = {
-                question: loadedQuestion.question
+                question: loadedQuestions.question
             };
            
-            const answerChoices = [...loadedQuestion.incorrect_answers];
+            const answerChoices = [...loadedQuestions.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
-            answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
+            answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestions.correct_answer);
 
             answerChoices.forEach((choice, index) => {
             formattedQuestion["choice" + (index + 1)] = choice;
@@ -37,6 +31,7 @@ fetch(
 
             return formattedQuestion;
         });
+        console.log(loadedQuestions)
         startGame();
     })
     .catch(err => {
@@ -44,7 +39,7 @@ fetch(
     });
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
     questionCounter = 0;
@@ -107,4 +102,3 @@ incrementScore = num => {
     scoreText.innerText = score;
 }
 
-startGame();
