@@ -47,6 +47,14 @@ let questions = [
     }
 ];
 
+fetch("questions.json")
+    .then( res => {
+        return res.json();
+    })
+    .then(loadedQuestions => {
+        console.log(loadedQuestions)
+    })
+
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
 
