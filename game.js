@@ -12,48 +12,36 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
-        question: "What skateboard blue?",
-        choice1: "orange",
-        choice2: "blue",
-        choice3: "yellow",
-        choice4: "green",
-        answer:  2
-    },
-    {
-        question: "What car orange?",
-        choice1: "orange",
-        choice2: "blue",
-        choice3: "yellow",
-        choice4: "green",
-        answer:  1
-    },
-    {
-        question: "What boat yellow?",
-        choice1: "orange",
-        choice2: "blue",
-        choice3: "mellow",
-        choice4: "green",
-        answer:  3
-    },
-    {
-        question: "What airplane green?",
-        choice1: "orange",
-        choice2: "blue",
-        choice3: "yellow",
-        choice4: "green",
-        answer:  4
-    }
-];
+let questions = [];
 
-fetch("questions.json")
-    .then( res => {
+fetch(
+    "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
+) //video 10 och 11
+    .then(res => {
         return res.json();
     })
     .then(loadedQuestions => {
-        console.log(loadedQuestions)
+        console.log(loadedQuestions.results);
+        questions = loadedQuestions.results.map( loadedQuestions => {
+            const formattedQuestion = {
+                question: loadedQuestion.question
+            };
+           
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;
+            answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
+
+            answerChoices.forEach((choice, index) => {
+            formattedQuestion["choice" + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
+        startGame();
     })
+    .catch(err => {
+        console.error(err);
+    });
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
