@@ -110,26 +110,30 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     + Adjusts body and container width
     + Adjusts buttons to be centered and stacked
 
+## Features:
+* Two HTML Pages
+    + Index.html
+        * Contains landing page to start timer
+        * Appends two new pages
+* Highscores 
+    + Retreives local data from previous page
+* One CSS Page
+    + Styles.css
+        * Contains centering and styling for html list features
+        * Contains media queries
+* Two Javascript Page * Contains: * Variables, including arrays with object * Event listeners * if/else if statements * For Loops * Functions * Local Storage set and get
+
+## Credits
+For code insperation, help and advice:
+* Simen Daehlin
+* Che Long Tran
+ 
+For content and style insperation:
+* James Q Quick
+https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1
+
 \
 &nbsp;
 [Back to Top](#table-of-contents)
 \
 &nbsp;
-
-
-
-
-
-### Requirements
-* Easy to navigate on various screen sizes.
-* Clear information on the services provided.
-* Keep the user interested with small bits of information to make them want to engage with the club.
-* Simple methods of contacting the club.
-* Visually inviting so users do not leave.
-### Expectations
-* I expect to know if a form has been submitted properly and if items are not filled in, to be prompted.
-* I expect all links to social media sites to be opened in a new tab.
-* I expect all navigation links to work correctly.
-* I expect screen size not to affect the quality of the website.
-* I expect all information to be correct and accurate.
-
