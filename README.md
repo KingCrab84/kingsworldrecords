@@ -17,40 +17,30 @@
 
 This is a quiz application using HTML, CSS, and Javascript. This application emphasizes the use of Javascript to provide quiz questions and collect user data to determine whether the answers to a question are correct, this then generates a score and appends a final page of results from the user data.
 
-This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
+This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link.
 
 
 
 # Table of Contents
 * [UX](#ux "UX")
-    * [User Goals](#user-goals "User Goals")
-    * [User Stories](#user-stories "User Stories")
-    * [Site Owners Goals](#site-owners-goals)
-    * [User Requirements and Expectations](#user-requirements-and-expectations)
-         * [Requirements](#requirements)
-         * [Expectations](#expectations)
-     * [Design Choices](#design-choices)
+    * [Summary](#Summary "Summary")
+    * [Following Features](#This-project-has-the-following-features "This project has the following features")
+    * [Psuedo code](#pseudo-code)
+    * [Script Features](#This-project-has-script-features-of)
+    * [Media Queries](#Media-Queries)
+    * [Features](#Features)
+    * [Credits](#Credits)
+
+    * [Design Choices](#design-choices)
         * [Fonts](#fonts)
         * [Icons](#icons)
         * [Colours](#colours)
         * [Structure](#structure)
-    * [Wireframes](#wireframes)
-    * [Features](#features)
-        * [Existing Features](#existing-features)
-            * [Navigation Bar](#navigation-bar)
-            * [Landing Page](#landing-page)
-            * [About Section](#about-section)
-            * [Events Section](#events-section)
-            * [Contact Section](#contact-section)
-            * [Footer](#footer)
-        * [Features to be implemented](#features-to-be-implemented)
-    * [Technologies used](#technologies-used)
         * [Languages](#languages)
         * [Tools and Libraries](#tools-and-libraries)
     * [Testing](#testing)
         * [Unfixed Bugs](#unfixed-bugs)
     * [Deployment](#deployment)
-    * [Credits](#credits)
 # UX
 
 
@@ -90,7 +80,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * Travels to another HTML
 * Retrieved highscores
 
-## This project has script features of:
+## Script features:
 * Questions contained in an array variable with objects
 * Variable declaration area
 * An event listener (onclick) that generates time interval
