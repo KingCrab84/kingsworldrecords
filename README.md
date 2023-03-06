@@ -53,24 +53,73 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     * [Credits](#credits)
 # UX
 
-## User Goals
-* Visually appealing, including images.
-* Easily navigated around.
-* Quality and valuable content.
-* Easily found contact details.
-* Form to directly contact the club.
-## User Stories
-* As a user, I want to know that the club is well established.
-* As a user, I want the website to give me information about what is involved in trathalon.
-* As a user, I want to be able to easily contact the club.
-* As a user, I want to be able to make contact with the club via several different methods, i.e. social media.
-* As a user, I want to be able to easily navigate through the website.
-* As a user, I want to know where the club is based.
-* As a user, I want to know what events are taking place.
-## Site owners Goals
-* Promote the club.
-* Increase the number of members.
-* Increase rankings on search engines.
+
+## Summary
+* HTML and CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia.
+* This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document.
+* This project utilizes the use of appending HTML pages.
+
+## This project has the following features:
+* A Start Quiz button
+* An appended HTML page that features questions, and multiple choice answers.
+    + Answers are recording using an event listener, "click" and tracks correct answers.
+* An appended HTML page that features:
+    + Final score which is calculated using time remaining
+    + A Summary of how many questions answered correctly
+    + Input area to record initials
+    + A Submit button
+    + Submit buttom saves initials and score to local storage
+* A Highscores HTML
+    + This a list summary of intials and final scores
+    + Clear button resets the page and local storage
+    + Go back button travels to the start of the quiz
+
+## Psuedo code:
+* Create a timer attached to a button with a starting value of 0
+* When timer is pressed start a reverse countdown
+* Create a 0 for countdown
+* When countdown starts, start quiz
+* Start Quiz will be on appended page
+* Append the question: choices
+* When user selects the right answer, textcontent "Correct!"
+* When user selects the right answer, textcontent "Wrong!"
+* Final score will keep track of how many the user got right
+* Left over time will be deducted from final score
+* Final Score Appended page
+* Captures local storage
+* Travels to another HTML
+* Retrieved highscores
+
+## This project has script features of:
+* Questions contained in an array variable with objects
+* Variable declaration area
+* An event listener (onclick) that generates time interval
+* A function to render the questions and choices on the page using a for loop
+* An event listener on all list choices
+* A comparison statement to compare correct answers to choices
+* An appended page showing the final stats of the individual user with input area for initials, captures local storage
+* Highscores retreived local storage
+
+## This project has media Queries for:
+* max-width: 980px
+    + Adjusts body and container width
+* max-width: 786px
+    + Adjusts body and container width
+    + Adjusts buttons
+* max-width: 640px
+    + Adjusts body and container width
+    + Adjusts buttons to be centered and stacked
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+
+
+
+
 ### Requirements
 * Easy to navigate on various screen sizes.
 * Clear information on the services provided.
@@ -84,8 +133,3 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * I expect screen size not to affect the quality of the website.
 * I expect all information to be correct and accurate.
 
-\
-&nbsp;
-[Back to Top](#table-of-contents)
-\
-&nbsp;

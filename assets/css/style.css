@@ -13,7 +13,7 @@
 }
 
 h1 {
-    font-size: 5.4rem;
+    font-size: 3.4rem;
     color: black;
     margin-bottom: 5rem;
 }
@@ -21,6 +21,11 @@ h1 {
 h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
 }
 
 .container {
