@@ -27,15 +27,19 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     * [Following Features](#This-project-has-the-following-features "This project has the following features")
     * [Psuedo code](#pseudo-code)
     * [Script Features](#This-project-has-script-features-of)
-    * [Media Queries](#Media-Queries)
-    * [Features](#Features)
-    * [Credits](#Credits)
-
     * [Design Choices](#design-choices)
         * [Fonts](#fonts)
         * [Icons](#icons)
         * [Colours](#colours)
-        * [Structure](#structure)
+        
+    * [Media Queries](#Media-Queries)
+    * [Features](#Features)
+    * [Credits](#Credits)
+
+
+
+
+
         * [Languages](#languages)
         * [Tools and Libraries](#tools-and-libraries)
     * [Testing](#testing)
@@ -89,6 +93,14 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * A comparison statement to compare correct answers to choices
 * An appended page showing the final stats of the individual user with input area for initials, captures local storage
 * Highscores retreived local storage
+
+## Design Choices
+    * Fonts
+        +
+    * Icons
+        +
+    * Colours
+        +
 
 ## This project has media Queries for:
 * max-width: 980px
