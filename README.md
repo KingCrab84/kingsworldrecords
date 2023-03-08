@@ -79,6 +79,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 ## Design Choices
 * Fonts
     + I have used Google Fonts to find a text that best seems fun and enjoyable. Bowlby One SC was chosen.
+    ![Alt text](googlefont.png)
 * Icons
     + I used some icons from the Font Awesome library. A star highlighting the highscores button. 
 * Colours
@@ -91,6 +92,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     #2cd126 - This color will be used on the tabs form in the game.
     #5d0af8 - When clicked the right answer this color will be shown. 
     #fa0000 - When clicked the wrong answer this color will be shown. 
+    ![Alt text](coolers.png)
 
 ## This project has media Queries for:
 * max-width: 980px
