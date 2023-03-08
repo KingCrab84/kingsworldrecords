@@ -23,10 +23,6 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     * [Features](#Features)
     * [Credits](#Credits)
 
-
-
-
-
         * [Languages](#languages)
         * [Tools and Libraries](#tools-and-libraries)
     * [Testing](#testing)
@@ -81,22 +77,20 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * Highscores retreived local storage
 
 ## Design Choices
-    * Fonts
-        + I have used Google Fonts to find a text that best seems fun and enjoyable. Bowlby One SC was chosen.
-    * Icons
-        + I used some icons from the Font Awesome library. A star highlighting the highscores button. 
-    * Colours
-        + I have used Coolors to help in the selection of my colour scheme.
-            Colour Pallet
-
-            #f9dc5cff - This colour will be used as a background colour.
-            #ed254eff - This colour will be used as the starting button on the landing page and also the progressbar during the quizgame.
-            #000000 - This color will be used on all text.
-            #FFFFFF -  This color will only be used to highlight the alternative buttons for the questions.
-            #465362ff - This color will be used on the highscore button to separate from the play button.
-            #2cd126 - This color will be used on the tabs form in the game.
-            #5d0af8 - When clicked the right answer this color will be shown. 
-            #fa0000 - When clicked the wrong answer this color will be shown. 
+* Fonts
+    + I have used Google Fonts to find a text that best seems fun and enjoyable. Bowlby One SC was chosen.
+* Icons
+    + I used some icons from the Font Awesome library. A star highlighting the highscores button. 
+* Colours
+    + I have used Coolors to help in the selection of my colour scheme.
+    #f9dc5cff - This colour will be used as a background colour.
+    #ed254eff - This colour will be used as the starting button on the landing page and also the progressbar during the quizgame.
+    #000000 - This color will be used on all text.
+    #FFFFFF -  This color will only be used to highlight the alternative buttons for the questions.
+    #465362ff - This color will be used on the highscore button to separate from the play button.
+    #2cd126 - This color will be used on the tabs form in the game.
+    #5d0af8 - When clicked the right answer this color will be shown. 
+    #fa0000 - When clicked the wrong answer this color will be shown. 
 
 ## This project has media Queries for:
 * max-width: 980px
@@ -106,8 +100,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     + Adjusts buttons
 * max-width: 640px
     + Adjusts body and container width
-    + Adjusts buttons to be centered and stacked
-
+    + Adjusts buttons and text
 ## Features:
 * Four HTML Pages
     + Index.html
@@ -135,3 +128,6 @@ https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJi
 [Back to Top](#table-of-contents)
 \
 &nbsp;
+
+
+fetch
