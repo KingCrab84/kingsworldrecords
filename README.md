@@ -1,17 +1,4 @@
-/* CSS HEX */
---red-crayola: #ed254eff;
---naples-yellow: #f9dc5cff;
---mint-cream: #f4fffdff;
---oxford-blue: #011936ff;
---charcoal: #465362ff;
-
-
-
-
-
 # Quiz
-
-
 
 # Goal for this Project
 
@@ -95,11 +82,21 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 ## Design Choices
     * Fonts
-        +
+        + I have used Google Fonts to find a text that best seems fun and enjoyable. Bowlby One SC was chosen.
     * Icons
-        +
+        + I used some icons from the Font Awesome library. A star highlighting the highscores button. 
     * Colours
-        +
+        + I have used Coolors to help in the selection of my colour scheme.
+            Colour Pallet
+
+            #f9dc5cff - This colour will be used as a background colour.
+            #ed254eff - This colour will be used as the starting button on the landing page and also the progressbar during the quizgame.
+            #000000 - This color will be used on all text.
+            #FFFFFF -  This color will only be used to highlight the alternative buttons for the questions.
+            #465362ff - This color will be used on the highscore button to separate from the play button.
+            #2cd126 - This color will be used on the tabs form in the game.
+            #5d0af8 - When clicked the right answer this color will be shown. 
+            #fa0000 - When clicked the wrong answer this color will be shown. 
 
 ## This project has media Queries for:
 * max-width: 980px
@@ -112,10 +109,10 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     + Adjusts buttons to be centered and stacked
 
 ## Features:
-* Two HTML Pages
+* Four HTML Pages
     + Index.html
         * Contains landing page to start timer
-        * Appends two new pages
+        * Highscores page
 * Highscores 
     + Retreives local data from previous page
 * One CSS Page
@@ -125,7 +122,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * Two Javascript Page * Contains: * Variables, including arrays with object * Event listeners * if/else if statements * For Loops * Functions * Local Storage set and get
 
 ## Credits
-For code insperation, help and advice:
+For code inspiration, help and advice:
 * Simen Daehlin
 * Che Long Tran
  
