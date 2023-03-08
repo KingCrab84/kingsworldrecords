@@ -7,16 +7,16 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const MAX_HIGH_SCORES = 5;
 
 
-finalScore.innerText = `Score: ${mostRecentScore}`; //not workin! video7, 11.00
+finalScore.innerText = `Score: ${mostRecentScore}`;
 
 username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value; //not workin! video7, 10.00
+    saveScoreBtn.disabled = !username.value; 
 });
 
 saveScoreBtn.addEventListener("click", e => {
     e.preventDefault();
 
-    const score = { //video 8
+    const score = {
         score: mostRecentScore,
         name: username.value
     };

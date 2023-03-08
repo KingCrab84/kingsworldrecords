@@ -11,7 +11,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple") //video 10 och 11 Build a Quiz App
+fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
     .then(res => {
         return res.json();
     })

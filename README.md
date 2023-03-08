@@ -64,8 +64,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     + A Submit button
     + Submit buttom saves initials and score to local storage
 * A Highscores HTML
-    + This a list summary of intials and final scores
-    + Clear button resets the page and local storage
+    + This a list summary of intials and final top 5 scores
     + Go back button travels to the start of the quiz
 
 ## Psuedo code:
@@ -75,8 +74,8 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * When countdown starts, start quiz
 * Start Quiz will be on appended page
 * Append the question: choices
-* When user selects the right answer, textcontent "Correct!"
-* When user selects the right answer, textcontent "Wrong!"
+* When user selects the right answer, color purple shows on the tab
+* When user selects the right answer, color red shows on the tab
 * Final score will keep track of how many the user got right
 * Left over time will be deducted from final score
 * Final Score Appended page
